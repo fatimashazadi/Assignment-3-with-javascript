@@ -1,0 +1,219 @@
+/* General Reset */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #222;
+  color: white;
+  padding: 15px 0;
+}
+
+.navbar .navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  color: goldenrod;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li {
+  display: inline;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: goldenrod;
+}
+
+/* Hero Section */
+.hero {
+  color: goldenrod;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #e67e22;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Popular Recipes */
+.popular-recipes {
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.popular-recipes h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.recipe-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.recipe {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.recipe img {
+  width: 100%;
+  border-radius: 8px;
+} 
+
+.recipe h3 {
+  margin-top: 10px;
+}
+
+/* Recipe Categories */
+.categories {
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}       
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.category {
+  background: #e67e22;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* CTA Section */
+.cta {
+  background: #e67e22;
+  color: white;
+  padding: 50px 20px;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+} 
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .navbar .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .recipe {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .category-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category {
+    font-size: 1rem;
+    padding: 8px 12px;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .footer .social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+

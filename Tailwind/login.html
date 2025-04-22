@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Recipe Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <nav class="navbar bg-white shadow-md">
+    <div class="navbar-container max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
+      <a href="index.html" class="logo text-2xl font-bold text-green-600">RecipeWorld</a>
+      <ul class="nav-links flex gap-6 text-gray-700 font-medium">
+        <li><a href="index.html" class="hover:text-green-600">Home</a></li>
+        <li><a href="recipe.html" class="hover:text-green-600">Recipes</a></li>
+        <li><a href="recipe type.html" class="hover:text-green-600">Categories</a></li>
+        <li><a href="login.html" class="hover:text-green-600">About</a></li>
+        <li><a href="join us .html" class="hover:text-green-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="login-section py-16 flex justify-center">
+    <div class="login-container bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+      <h2 class="text-2xl font-semibold mb-6 text-center">Login to Your Account</h2>
+      <form class="login-form flex flex-col gap-4" action="#" method="POST">
+        <input type="email" name="email" placeholder="Email Address" required class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" />
+        <input type="password" name="password" placeholder="Password" required class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" />
+        <button type="submit" class="btn bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition">Login</button>
+      </form>
+      <p class="login-extra text-sm mt-4 text-center">Don't have an account? <a href="#" class="text-green-600 hover:underline">Sign up here</a></p>
+    </div>
+  </section>
+
+  <footer class="footer bg-white border-t mt-10 py-6 text-center">
+    <p class="text-gray-600">&copy; 2025 Recipe Website. All rights reserved.</p>
+    <div class="social-icons flex justify-center gap-6 mt-2 text-green-600">
+      <a href="#" class="hover:underline">Facebook</a>
+      <a href="#" class="hover:underline">Instagram</a>
+      <a href="#" class="hover:underline">Twitter</a>
+    </div>
+  </footer>
+
+</body>
+</html>

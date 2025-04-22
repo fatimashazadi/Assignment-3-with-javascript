@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navigation Bar -->
+  <nav class="navbar bg-white shadow-md">
+    <div class="navbar-container max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="logo text-2xl font-bold text-red-500">RecipeWorld</a>
+      
+      <!-- Mobile Menu Button -->
+      <button id="menu-toggle" class="md:hidden text-red-500 text-2xl focus:outline-none">
+        ☰
+      </button>
+
+      <!-- Navigation Links -->
+      <ul id="nav-links" class="nav-links hidden md:flex space-x-6 text-gray-700">
+        <li><a href="index.html" class="hover:text-red-500 transition">Home</a></li>
+        <li><a href="recipe.html" class="hover:text-red-500 transition">Recipes</a></li>
+        <li><a href="recipe type.html" class="hover:text-red-500 transition">Categories</a></li>
+        <li><a href="login.html" class="hover:text-red-500 transition">About</a></li>
+        <li><a href="join us .html" class="hover:text-red-500 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Light/Dark Mode Toggle -->
+  <div class="text-right max-w-7xl mx-auto px-4 mt-4">
+    <button id="themeToggle" class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300 transition">
+      🌙 Toggle Dark Mode
+    </button>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero bg-cover bg-center h-[400px] flex items-center justify-center text-white" style="background-image: url('./images/pasta-9450866_1280.webp');">
+    <div class="hero-content text-center bg-black bg-opacity-60 p-8 rounded-lg">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to Our Recipe World</h1>
+      <p class="text-lg mb-6">Discover delicious recipes from around the globe</p>
+      <a href="recipe type.css" class="btn inline-block bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Explore Recipes</a>
+    </div>
+  </section>
+
+  <!-- Search Bar -->
+  <div class="max-w-7xl mx-auto px-4 my-8">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search Recipes..."
+      class="w-full md:w-1/2 px-4 py-2 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-red-400"
+    />
+  </div>
+
+  <!-- Popular Recipes -->
+  <section class="popular-recipes pb-12 px-4 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-8 text-center">Popular Recipes</h2>
+    <div class="recipe-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="recipe bg-white rounded shadow hover:shadow-lg transition">
+        <img src="./images/pasta-794464_1280.jpg" alt="Recipe 1" class="w-full h-48 object-cover rounded-t">
+        <h3 class="text-xl font-medium text-center py-4">Recipe 1</h3>
+      </div>
+      <div class="recipe bg-white rounded shadow hover:shadow-lg transition">
+        <img src="./images/food-8920623_1280.jpg" alt="Recipe 2" class="w-full h-48 object-cover rounded-t">
+        <h3 class="text-xl font-medium text-center py-4">Recipe 2</h3>
+      </div>
+      <div class="recipe bg-white rounded shadow hover:shadow-lg transition">
+        <img src="./images/pasta-9450866_1280.webp" alt="Recipe 3" class="w-full h-48 object-cover rounded-t">
+        <h3 class="text-xl font-medium text-center py-4">Recipe 3</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipe Categories -->
+  <section class="categories py-12 bg-gray-100 px-4">
+    <h2 class="text-3xl font-semibold mb-8 text-center">Recipe Categories</h2>
+    <div class="category-container flex flex-wrap justify-center gap-4">
+      <div class="category bg-white border border-gray-200 px-6 py-3 rounded shadow hover:shadow-md transition cursor-pointer">Appetizers</div>
+      <div class="category bg-white border border-gray-200 px-6 py-3 rounded shadow hover:shadow-md transition cursor-pointer">Main Course</div>
+      <div class="category bg-white border border-gray-200 px-6 py-3 rounded shadow hover:shadow-md transition cursor-pointer">Desserts</div>
+      <div class="category bg-white border border-gray-200 px-6 py-3 rounded shadow hover:shadow-md transition cursor-pointer">Drinks</div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta bg-red-500 text-white py-16 text-center px-4">
+    <h2 class="text-3xl font-bold mb-4">Join Our Foodie Community</h2>
+    <p class="text-lg">Subscribe to get the latest recipes and tips straight to your inbox.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-gray-800 text-white py-8 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+      <p class="text-center md:text-left mb-4 md:mb-0">&copy; 2025 Recipe Website. All rights reserved.</p>
+      <div class="social-icons flex space-x-6">
+        <a href="#" class="hover:text-red-400">Facebook</a>
+        <a href="#" class="hover:text-red-400">Instagram</a>
+        <a href="#" class="hover:text-red-400">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" class="fixed bottom-6 right-6 bg-red-500 text-white px-4 py-2 rounded-full shadow-md hidden hover:bg-red-600 transition">
+    ↑ Top
+  </button>
+
+  <!-- JavaScript Link -->
+  <script src="script.js"></script>
+</body>
+</html>

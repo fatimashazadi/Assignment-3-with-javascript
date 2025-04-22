@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload Your Recipe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="navbar bg-white shadow-md">
+    <div class="navbar-container max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="logo text-2xl font-bold text-red-500">RecipeWorld</a>
+      <ul class="nav-links flex space-x-6 text-gray-700">
+        <li><a href="index.html" class="hover:text-red-500 transition">Home</a></li>
+        <li><a href="recipe.html" class="hover:text-red-500 transition">Recipes</a></li>
+        <li><a href="recipe type.html" class="hover:text-red-500 transition">Categories</a></li>
+        <li><a href="login.html" class="hover:text-red-500 transition">About</a></li>
+        <li><a href="join us .html" class="hover:text-red-500 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Upload Section -->
+  <section class="upload-section py-16 px-4 bg-white">
+    <div class="upload-container max-w-2xl mx-auto bg-gray-100 p-8 rounded shadow-md">
+      <h1 class="text-3xl font-bold mb-6 text-center text-gray-700">Share Your Delicious Recipe</h1>
+      <form class="upload-form space-y-4" action="#" method="POST">
+        <input type="text" placeholder="Recipe Title" required
+               class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-400" />
+        <textarea placeholder="Ingredients (one per line)" rows="5" required
+                  class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-400 resize-y"></textarea>
+        <textarea placeholder="Instructions" rows="6" required
+                  class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-400 resize-y"></textarea>
+        <input type="file" accept="image/*"
+               class="w-full py-2 px-2 bg-white border border-gray-300 rounded cursor-pointer file:mr-4 file:py-2 file:px-4 file:border-0 file:text-sm file:font-semibold file:bg-red-100 file:text-red-600 hover:file:bg-red-200" />
+        <button type="submit" class="btn w-full bg-red-500 text-white py-2 rounded hover:bg-red-600 transition">Submit Recipe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-gray-800 text-white py-8 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+      <p class="text-center md:text-left mb-4 md:mb-0">&copy; 2025 Recipe Website. All rights reserved.</p>
+      <div class="social-icons flex space-x-6">
+        <a href="#" class="hover:text-red-400">Facebook</a>
+        <a href="#" class="hover:text-red-400">Instagram</a>
+        <a href="#" class="hover:text-red-400">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

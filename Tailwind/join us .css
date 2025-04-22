@@ -1,0 +1,71 @@
+/* Join Us Hero Section */
+.join-hero {
+    background: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  }
+  
+  .join-section {
+    background: #fff;
+    padding: 60px 20px;
+  }
+  
+  .join-container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .join-container h2 {
+    color: goldenrod;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+  }
+  
+  .join-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .join-card {
+    background: #f4f4f4;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .join-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .join-card h3 {
+    color: #e67e22;
+    margin-bottom: 10px;
+  }
+  
+  .join-card p {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .join-btn {
+    margin-top: 40px;
+    padding: 15px 30px;
+    background: #e67e22;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .join-btn:hover {
+    background: goldenrod;
+  }
+  

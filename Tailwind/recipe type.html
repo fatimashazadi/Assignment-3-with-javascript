@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Types</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="navbar bg-white shadow-md">
+    <div class="navbar-container max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="logo text-2xl font-bold text-red-500">RecipeWorld</a>
+      <ul class="nav-links flex space-x-6 text-gray-700">
+        <li><a href="index.html" class="hover:text-red-500 transition">Home</a></li>
+        <li><a href="recipe.html" class="hover:text-red-500 transition">Recipes</a></li>
+        <li><a href="recipe type.html" class="hover:text-red-500 transition">Categories</a></li>
+        <li><a href="login.html" class="hover:text-red-500 transition">About</a></li>
+        <li><a href="join us .html" class="hover:text-red-500 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Recipe Types Section -->
+  <section class="recipe-types py-16 px-4 bg-white">
+    <div class="types-container max-w-6xl mx-auto">
+      <h1 class="text-4xl font-bold text-center mb-12 text-gray-700">Explore Recipe Types</h1>
+
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="type-card bg-gray-100 rounded-lg shadow-md overflow-hidden">
+          <img src="./images/cook-7439182_1280.jpg" alt="Appetizers" class="w-full h-52 object-cover" />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2">Appetizers</h2>
+            <p class="text-gray-600 mb-4">Quick and delicious starters to get your meal going!</p>
+            <a href="#" class="btn inline-block bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Browse Appetizers</a>
+          </div>
+        </div>
+
+        <div class="type-card bg-gray-100 rounded-lg shadow-md overflow-hidden">
+          <img src="./images/pasta-9450866_1280.webp" alt="Main Course" class="w-full h-52 object-cover" />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2">Main Course</h2>
+            <p class="text-gray-600 mb-4">Satisfying and hearty meals for lunch or dinner.</p>
+            <a href="#" class="btn inline-block bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Browse Main Courses</a>
+          </div>
+        </div>
+
+        <div class="type-card bg-gray-100 rounded-lg shadow-md overflow-hidden">
+          <img src="./images/download.pnj.png" alt="Desserts" class="w-full h-52 object-cover" />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2">Desserts</h2>
+            <p class="text-gray-600 mb-4">Sweet and indulgent treats to end your meal on a high note.</p>
+            <a href="#" class="btn inline-block bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Browse Desserts</a>
+          </div>
+        </div>
+
+        <div class="type-card bg-gray-100 rounded-lg shadow-md overflow-hidden">
+          <img src="./images/cocktail-8076619_1280.jpg" alt="Drinks" class="w-full h-52 object-cover" />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2">Drinks</h2>
+            <p class="text-gray-600 mb-4">Refresh yourself with these delightful beverages.</p>
+            <a href="#" class="btn inline-block bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Browse Drinks</a>
+          </div>
+        </div>
+
+        <div class="type-card bg-gray-100 rounded-lg shadow-md overflow-hidden">
+          <img src="./images/food-8920623_1280.jpg" alt="Snacks" class="w-full h-52 object-cover" />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2">Snacks</h2>
+            <p class="text-gray-600 mb-4">Perfect quick bites for any time of the day.</p>
+            <a href="#" class="btn inline-block bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Browse Snacks</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-gray-800 text-white py-8 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+      <p class="text-center md:text-left mb-4 md:mb-0">&copy; 2025 Recipe Website. All rights reserved.</p>
+      <div class="social-icons flex space-x-6">
+        <a href="#" class="hover:text-red-400">Facebook</a>
+        <a href="#" class="hover:text-red-400">Instagram</a>
+        <a href="#" class="hover:text-red-400">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
